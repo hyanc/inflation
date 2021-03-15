@@ -1,2 +1,4 @@
-# inflation
-Count your money and prices effected through inflation
+![inflation](https://raw.githubusercontent.com/hyanc/inflation/master/preview.png)
+
+# Data source
+BPS
