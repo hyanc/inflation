@@ -86,7 +86,7 @@
 			result = document.getElementById('result'),
 			source = Object.keys(inflation);
 			
-			var input = document.getElementById('numbers').value,
+			var input = document.getElementById('numbers'),
 			fromYear = document.getElementById('from'),
 			toYear = document.getElementById('to'),
 			year = options = Object.keys(inflation),
@@ -103,8 +103,8 @@
 				}
 			},
 			calc = () => {
-				if((fromYear.value + '-' + toYear.value).indexOf('Select year')<0 && fromYear.value != toYear.value && input != ""){
-					var nominal = Number(input.replace(/[^0-9.-]+/g,"")), increase = toYear.value > fromYear.value,
+				if((fromYear.value + '-' + toYear.value).indexOf('Select year')<0 && fromYear.value != toYear.value && input.value != ""){
+					var nominal = Number(input.value.replace(/[^0-9.-]+/g,"")), increase = toYear.value > fromYear.value,
 					year = increase?source:source.reverse(),
 					result = {
 						'year':{
